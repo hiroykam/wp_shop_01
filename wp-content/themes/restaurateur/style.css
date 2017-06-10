@@ -1285,6 +1285,8 @@ POSTS & CONTENT STYLES
 				margin: 0 0 24px 0; /* for ie8 & below */ 
 				margin: 0 0 1.5rem 0; 
 				padding-bottom: 1px;
+                                text-align: center;
+                                font-weight: bold;
 			}
 			
 			.commentlist li.comment article[id*=comment-] p:last-child,
