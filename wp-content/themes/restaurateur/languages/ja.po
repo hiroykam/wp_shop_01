@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpthemes.co.nz - framework\n"
 "POT-Creation-Date: 2014-03-24 13:08+0800\n"
-"PO-Revision-Date: 2017-06-11 20:02+0900\n"
+"PO-Revision-Date: 2017-06-11 22:13+0900\n"
 "Last-Translator: ed cardinal <lizardking67@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -31,13 +31,13 @@ msgstr ""
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/404.php:19
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/search.php:46
 msgid "Most Used Categories"
-msgstr "よく利用するカテゴリ"
+msgstr "投稿のカテゴリ"
 
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/404.php:27
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/search.php:54
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "該当月のアーカイブをお探しください。%1$s"
+msgstr "該当月の投稿一覧をお探しください。%1$s"
 
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/alt-homepage.php:85
 msgid "Images added to this page will appear here"
