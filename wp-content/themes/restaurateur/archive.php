@@ -12,9 +12,9 @@
 							if ( is_day() ) :
 								printf( __( 'Daily Archives: %s', 'restaurateur' ), '<span class="colortxt">' . get_the_date() . '</span>' );
 							elseif ( is_month() ) :
-								printf( __( 'Monthly Archives: %s', 'restaurateur' ), '<span class="colortxt">' . get_the_date( 'F Y' ) . '</span>' );
+								printf( __( 'Monthly Archives: %s', 'restaurateur' ), '<span class="colortxt">' . get_the_date( 'Y年sF' ) . '</span>' );
 							elseif ( is_year() ) :
-								printf( __( 'Yearly Archives: %s', 'restaurateur' ), '<span class="colortxt">' . get_the_date( 'Y' ) . '</span>' );
+								printf( __( 'Yearly Archives: %s', 'restaurateur' ), '<span class="colortxt">' . get_the_date( 'Y年' ) . '</span>' );
 							else :
 								_e( 'Archives', 'restaurateur' );
 							endif;

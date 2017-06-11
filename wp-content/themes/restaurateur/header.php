@@ -101,6 +101,13 @@
             <div id="search-icon"></div>
           </div>
 	    </div>
+
+        <div class="breadcrumbs">
+            <?php if(function_exists('bcn_display'))
+            {
+                bcn_display();
+            }?>
+        </div>
       
         <nav id="access" role="navigation">
             <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'restaurateur' ); ?></h1>

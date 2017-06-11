@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpthemes.co.nz - framework\n"
 "POT-Creation-Date: 2014-03-24 13:08+0800\n"
-"PO-Revision-Date: 2017-06-10 21:39+0900\n"
+"PO-Revision-Date: 2017-06-11 20:02+0900\n"
 "Last-Translator: ed cardinal <lizardking67@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -46,17 +46,17 @@ msgstr "このページに追加された画像はここで表示されます"
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/archive.php:13
 #, php-format
 msgid "Daily Archives: %s"
-msgstr "今日の記事：%s"
+msgstr "%sの投稿一覧"
 
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/archive.php:15
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr "今月の記事：%s"
+msgstr "%sの投稿一覧"
 
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/archive.php:17
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr "今年の記事：%s"
+msgstr "%sの投稿一覧"
 
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/archive.php:19
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/functions.php:103
@@ -64,7 +64,7 @@ msgstr "今年の記事：%s"
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/sidebar-menu-item.php:39
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/sidebar.php:39
 msgid "Archives"
-msgstr "記事"
+msgstr "投稿一覧"
 
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/archive.php:48
 #: C:\xampp\htdocs\wordpress\wp-content\themes\restaurateur/author.php:55

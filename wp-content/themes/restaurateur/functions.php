@@ -651,7 +651,8 @@ if ( ! function_exists( 'restaurateur_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function restaurateur_posted_on() {
-	printf( __( '<span class="sep meta-on">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a><span class="byline"> <span class="sep meta-by"> Posted </span> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'restaurateur' ),
+    /*
+	printf( __( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a><span class="byline"> <span class="sep meta-by"> Posted </span> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'restaurateur' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
@@ -660,6 +661,11 @@ function restaurateur_posted_on() {
 		esc_attr( sprintf( __( 'View all posts by %s', 'restaurateur' ), get_the_author() ) ),
 		esc_html( get_the_author() )
 	);
+    */
+    printf('投稿日：<time class="entry-date" datetime="%1$s">%2$s</time>',
+        esc_attr( get_the_date( 'c' ) ),
+        esc_html( get_the_date() )
+    );
 }
 endif;
 

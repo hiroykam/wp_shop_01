@@ -18,8 +18,8 @@ jQuery(document).ready(function($){
 	checkWindowSize();
 	
 	/* prepend menu icon */
-	$('div.menu').prepend('<div id="menu-icon">Menu</div>');
-	$('#menu-filter-wrap').prepend('<div id="menu-item-icon">Select Menu Item</div>');
+	$('div.menu').prepend('<div id="menu-icon">ナビ</div>');
+	$('#menu-filter-wrap').prepend('<div id="menu-item-icon">項目を選択してください</div>');
 	
 	/* toggle nav */
 	$("#menu-icon").on("click", function(){

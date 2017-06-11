@@ -36,7 +36,7 @@ function wpcf7_text_form_tag_handler( $tag ) {
 
 	$atts = array();
 
-	$atts['size'] = $tag->get_size_option( '40' );
+	$atts['size'] = $tag->get_size_option( '30' );
 	$atts['maxlength'] = $tag->get_maxlength_option();
 	$atts['minlength'] = $tag->get_minlength_option();
 
@@ -44,6 +44,10 @@ function wpcf7_text_form_tag_handler( $tag ) {
 	&& $atts['maxlength'] < $atts['minlength'] ) {
 		unset( $atts['maxlength'], $atts['minlength'] );
 	}
+
+	if ( empty($atts['maxlength']) ) {
+        $atts['maxlength'] = 300;
+    }
 
 	$atts['class'] = $tag->get_class_option( $class );
 	$atts['id'] = $tag->get_id_option();

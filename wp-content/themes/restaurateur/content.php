@@ -28,31 +28,6 @@
 
 
 	<footer class="entry-meta">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'restaurateur' ) );
-				if ( $categories_list && restaurateur_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( '<span class="meta-cat"></span>Filed Under %1$s', 'restaurateur' ), $categories_list ); ?>
-			</span>
-			<span class="sep"> | </span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'restaurateur' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="tag-links">
-				<?php printf( __( '<span class="meta-tag"></span>Tagged %1$s', 'restaurateur' ), $tags_list ); ?>
-			</span>
-			<span class="sep"> | </span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-
-
 
 		<?php edit_post_link( __( 'Edit', 'restaurateur' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- #entry-meta -->

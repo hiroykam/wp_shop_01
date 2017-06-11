@@ -2,7 +2,7 @@
 	<footer id="colophon" role="contentinfo">
 		<div id="site-generator">
 
-			<?php echo esc_attr( get_bloginfo( 'name', 'display' ) );  ?>
+            &copy; <?php echo esc_attr( get_bloginfo( 'name', 'display' ) );  ?>
 
 		</div>
 	</footer><!-- #colophon -->
