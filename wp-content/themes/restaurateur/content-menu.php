@@ -18,20 +18,6 @@
 
 
 	<footer class="entry-meta">
-		<?php   // Get terms for post
-		 $terms = get_the_terms( $post->ID , 'menu_item_category' );
-		 // Loop over each item since it's an array
-		 if ( $terms != null ){
-		 foreach( $terms as $term ) {
-		 // Print the name method from $term which is an OBJECT
-		  $menu[] = $term->slug ;
-		  $menu_term = implode(", ", $menu);
-		 // Get rid of the other data stored in the object, since it's not needed
-		 unset($term);
-		} } ?>
-        <span class="cat-links">
-            <?php printf( __( '<span class="meta-eat">In</span> <strong>%s</strong>', 'restaurateur' ), $menu_term ); ?>
-        </span>
 	</footer><!-- #entry-meta -->
     
     <?php  $price = get_post_meta( $post->ID, 'menu_price', true ); 

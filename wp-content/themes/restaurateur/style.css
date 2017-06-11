@@ -133,7 +133,7 @@ body,
 select, 
 input, 
 textarea {   
-	color: #222;
+	color: #ababab;
 }
 
 small, 
@@ -2862,9 +2862,9 @@ body.page .grid-box .post_content {
 	right: -10px;
 	top: 12px;
 	padding: 6px 15px 8px 15px;
-	background-color: #e68b2b;
+	background-color: #fefefe;
 	font-size: 24px;
-	color: #fff;
+	color: #3f3fff;
 	z-index: 2;
 	border-radius: 12px;
 }
@@ -2895,11 +2895,11 @@ Menu Styles
 #menu-filters li a,
 #menu-item-icon {
 	display: block;
-	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+	font-family: "Times New Roman";
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #bcbcbc !important;	
+	color: #121212 !important;
 	padding: 5px 6px;
 }
 	#menu-item-icon {
