@@ -43,11 +43,15 @@
                 </aside>
 
                 <aside id="archives" class="widget">
-					<div class="widget-title"><?php _e( 'Archives', 'restaurateur' ); ?></div>
+					<div class="widget-title">これまでの<?php _e( 'Archives', 'restaurateur' ); ?></div>
 					<ul>
 						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 					</ul>
 				</aside>
+                <aside id="jobs" class="widget">
+                 <div class="widget-title">仲屋メンバー募集中</div>
+                 <ul><li><a href="/jobs">仲谷では一緒に働けるメンバを募集しております</a></li></ul>
+               </aside>
                 
 			</div>
 			<?php endif; // end sidebar widget area ?>

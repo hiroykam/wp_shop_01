@@ -99,11 +99,11 @@ td img {
 
 /* type & header styles */
 body {
-	font-size: 16px; /* for ie8 & below*/ 
+	font-size: 14px; /* for ie8 & below*/ 
 	font-size: 1rem; 
 	line-height: 24px; /* for ie8 & below*/ 
 	line-height: 1.5rem; 
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 }
 
 p { 
@@ -2862,9 +2862,9 @@ body.page .grid-box .post_content {
 	right: -10px;
 	top: 12px;
 	padding: 6px 15px 8px 15px;
-	background-color: #fefefe;
+	background-color: #efefef;
 	font-size: 24px;
-	color: #3f3fff;
+	color: #efefef;
 	z-index: 2;
 	border-radius: 12px;
 }
@@ -3091,7 +3091,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	
 	nav[role=navigation] .menu.nav-mobile #menu-icon { 
 		display: block;
-		width: 80px; 
+		width: auto; 
 	}
 	
 	nav[role=navigation] .menu.nav-mobile ul li,
@@ -3524,6 +3524,6 @@ PRINT STYLES
 }
 
 div.breadcrumbs {
-	margin-left: 222px;
-	padding:5px 0 0 10px;
+	margin-left: 5px;
+	padding: 10px;
 }

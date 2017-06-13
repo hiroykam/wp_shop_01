@@ -18,20 +18,55 @@ jQuery(document).ready(function($){
 	checkWindowSize();
 	
 	/* prepend menu icon */
-	$('div.menu').prepend('<div id="menu-icon">ナビ(タップすると開きます)</div>');
+	$('div.menu').prepend('<div id="menu-icon">ナビ（タップすると開きます）</div>');
 	$('#menu-filter-wrap').prepend('<div id="menu-item-icon">タップして項目を選択してください</div>');
 	
+        var $toggle = 0;
+        var $is_fired = false;
+        $(document).click(function() {
+            if ($is_fired) {
+                $is_fired = false;
+                return;
+            }
+            if ($toggle & 0x1) {
+                $toggle &= ~(0x1);
+                $("div.menu > ul").slideToggle();
+                $("#menu-icon").toggleClass("active");
+            }
+            if ($toggle & 0x2) {
+                $toggle &= ~(0x2);
+                $("#menu-filters").slideToggle();
+                $("$menu-filters").toggleClass("active");
+            }
+      　});
+
 	/* toggle nav */
 	$("#menu-icon").on("click", function(){
+                if ($toggle & 0x1) $toggle &= ~(0x1);
+                else $toggle |= 0x1;
+                if ($toggle & 0x2) {
+                    $toggle &= ~(0x2);
+                    $("#menu-filters").slideToggle();
+                    $("$menu-filters").toggleClass("active");
+                }  
+                $is_fired = true;
 		$("div.menu > ul").slideToggle();
 		$(this).toggleClass("active");
 	});
 
 	$("#menu-item-icon").on("click", function(){
+                if ($toggle & 0x2) $toggle &= ~(0x2);
+                else $toggle |= 0x2;
+                if ($toggle & 0x1) {
+                    $toggle &= ~(0x1);
+                    $("div.menu > ul").slideToggle();
+                    $("#menu-icon").toggleClass("active");
+                }
+                $is_fired = true;
 		$("#menu-filters").slideToggle();
 		$(this).toggleClass("active");
 	});
-	
+
 	/* preloader */
 	$('#load-cycle').hide();
 	

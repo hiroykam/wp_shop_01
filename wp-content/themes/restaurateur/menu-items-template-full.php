@@ -27,11 +27,13 @@ get_header(); ?>
                                 printf( __( '<li><a href="#" data-filter=".%1$s" class="menu-filter-link">%2$s</a></li>' ), $term->slug, $term->name );
                                 $i++;
                             } ?>
+                            <li><a href="/menu/sake" class="">日本酒</a></li>
                       </ul>
                     </div>
                     <?php unset($terms); ?>
                   <?php endif; ?>
                 <?php endif; ?>
+                                      <ul><li>メニューの一部をご紹介しております。</li><li>他にも多くのメニューを用意してお客様のご来店をお待ちしております。</li></ul>
 				</header>
                 
 			  <?php if (!empty($post->post_content) ) : ?>
