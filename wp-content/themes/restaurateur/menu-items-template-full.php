@@ -28,6 +28,7 @@ get_header(); ?>
                                 $i++;
                             } ?>
                             <li><a href="/menu/sake" class="">日本酒</a></li>
+                            <li><a href="/menu/shochu" class="">焼酎</a></li>
                       </ul>
                     </div>
                     <?php unset($terms); ?>
