@@ -4,16 +4,15 @@
  */
 ?>
 		<div id="sidebar" class="widget-area col300" role="complementary">
-
-			<?php if ( ! dynamic_sidebar( 'sidebar-right' ) ) : ?>
+			<?php if ( ! dynamic_sidebar( 'sidebar-alt-home' ) ) : ?>
 
 				<aside id="recent-posts" class="widget">
-					<div class="widget-title"><?php _e( 'Latest Posts', 'restaurateur' ); ?></div>
+					<div class="widget-title">仲屋からのお知らせ</div>
 					<ul>
 						<?php
-							$args = array( 'numberposts' => '10', 'post_status' => 'publish' );
+							$args = array( 'numberposts' => '5', 'category' => '9', 'post_status' => 'publish' );
 							$recent_posts = wp_get_recent_posts( $args );
-							
+
 							foreach( $recent_posts as $recent ){
 								if ($recent["post_title"] == '') {
 									 $recent["post_title"] = __('View Post', 'restaurateur');
@@ -24,24 +23,25 @@
                     </ul>
 				</aside>
 
-                
-                <aside id="categories" class="widget">
-					<div class="widget-title"><?php _e( 'Categories', 'restaurateur' ); ?></div>
+                                <aside id="archives" class="widget">
+					<div class="widget-title">店舗情報</div>
 					<ul>
-						<?php wp_list_categories( array( 
-							'title_li' => '',
-							'hierarchical' => 0
-						) ); ?>
-					</ul>
-				</aside>
-                
-                <aside id="archives" class="widget">
-					<div class="widget-title"><?php _e( 'Archives', 'restaurateur' ); ?></div>
-					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+                                           <li><a href="/jobs/">京王線千歳烏山駅徒歩2分程度歩いたところにあります</a></li>
 					</ul>
 				</aside>
 
+                                <aside id="archives" class="widget">
+                                        <div class="widget-title">こだわりの日本酒</div>
+                                        <ul>
+                                           <li><a href="/menu/sake/">やきとん、モツ煮にあう日本酒各種を取り寄せております！</a></li>
+                                        </ul>
+                                </aside>
+
+
+                <aside id="jobs" class="widget">
+                 <div class="widget-title">仲屋メンバー募集中</div>
+                 <ul><li><a href="/jobs/">仲谷では一緒に働けるメンバを募集しております</a></li></ul>
+               </aside>
 
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #sidebar .widget-area -->
