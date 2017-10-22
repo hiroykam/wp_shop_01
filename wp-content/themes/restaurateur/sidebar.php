@@ -10,7 +10,7 @@
 					<div class="widget-title">仲屋からのお知らせ</div>
 					<ul>
 						<?php
-							$args = array( 'numberposts' => '5', 'category' => '9', 'post_status' => 'publish' );
+							$args = array( 'numberposts' => '12', 'category' => '9', 'post_status' => 'publish' );
 							$recent_posts = wp_get_recent_posts( $args );
 
 							foreach( $recent_posts as $recent ){
@@ -29,6 +29,24 @@
                                            <li><a href="/jobs/">京王線千歳烏山駅徒歩2分程度歩いたところにあります</a></li>
 					</ul>
 				</aside>
+
+<aside id="recent-posts" class="widget">
+                                        <div class="widget-title">仲屋家の食卓</div>
+                                        <ul>
+<li>スタッフさんと休憩時間に食べる、「まかない」を公開しちゃいます！</li>
+                                                <?php
+                                                        $args = array( 'numberposts' => '5', 'category' => '1', 'post_status' => 'publish' );
+                                                        $recent_posts = wp_get_recent_posts( $args );
+
+                                                        foreach( $recent_posts as $recent ){
+                                                                if ($recent["post_title"] == '') {
+                                                                         $recent["post_title"] = __('View Post', 'restaurateur');
+                                                                }
+                                                                echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' . $recent["post_title"] .'</a> </li> ';
+                                                        }
+                                                ?>
+                    </ul>
+                                </aside>
 
                                 <aside id="archives" class="widget">
                                         <div class="widget-title">こだわりの日本酒</div>

@@ -7,6 +7,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+<link rel="stylesheet" id="restaurateur_style-css" href="/wp-content/themes/restaurateur/original.css" type="text/css" media="all">
+
 <?php wp_head(); ?>
 </head>
 
@@ -29,7 +31,7 @@
 			<div id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
             <?php endif; ?>
 		</div>
-        
+       <!-- 
         <div id="social-media" class="clearfix">
         
         	<?php if ( get_theme_mod( 'restaurateur_facebook' ) ) : ?>
@@ -100,8 +102,8 @@
             
             <div id="search-icon"></div>
           </div>
-	    </div>
-         
+         -->
+
         <?php if ( !is_home() && !is_front_page() ) : ?>
         <div class="breadcrumbs">
             <?php if(function_exists('bcn_display'))
@@ -110,6 +112,8 @@
             }?>
         </div>
         <?php endif; ?>
+
+	    </div>
 
         <nav id="access" role="navigation">
             <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'restaurateur' ); ?></h1>

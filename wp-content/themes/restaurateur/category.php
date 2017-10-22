@@ -53,7 +53,7 @@
 			<?php endif; ?>
 
         </div> <!-- end #main -->
-
+<br><br>
         <?php get_sidebar(); ?>
 
     </div> <!-- end #content -->
