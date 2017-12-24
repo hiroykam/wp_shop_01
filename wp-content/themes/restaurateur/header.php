@@ -31,7 +31,7 @@
 			<div id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
             <?php endif; ?>
 		</div>
-       <!-- 
+  
         <div id="social-media" class="clearfix">
         
         	<?php if ( get_theme_mod( 'restaurateur_facebook' ) ) : ?>
@@ -100,9 +100,8 @@
             <?php endif; ?>
 			
             
-            <div id="search-icon"></div>
+            <!-- div id="search-icon"></div -->
           </div>
-         -->
 
         <?php if ( !is_home() && !is_front_page() ) : ?>
         <div class="breadcrumbs">
